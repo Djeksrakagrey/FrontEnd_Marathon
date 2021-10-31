@@ -64,43 +64,11 @@
 
 
 
-
-
-// let a;
-// let b;
-// let sum
-// let min
-// let multi
-// let divis
-
-// function calc()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //  КАЛЬКУЛЯТОР
 
 let a = prompt("Введите первую переменную(число)");
 let b = prompt("Введите вторую переменную(число)");
-let operator = prompt("Введите оператор(знак +, -, * или /)");
+let operator = prompt("Введите математический символ(знак +, -, * или /)");
 
 function calc(a, b, operant) {
     if (operator == ("+")) {
