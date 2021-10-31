@@ -70,7 +70,7 @@ let a = prompt("Введите первую переменную(число)");
 let b = prompt("Введите вторую переменную(число)");
 let operator = prompt("Введите математический символ(знак +, -, * или /)");
 
-function calc(a, b, operant) {
+function calc(a, b, operator) {
     if (operator == ("+")) {
         alert(a * 1 + b * 1);
     }
@@ -80,7 +80,7 @@ function calc(a, b, operant) {
         alert(a * b);
     } else if (operator == ("/")) {
         alert(a / b);
-    } else if (a == "" || b == "" || operant == "" || typeof a !== Number || typeof b !== Number) {
+    } else if (a == "" || b == "" || operator == "" || typeof a !== Number || typeof b !== Number) {
         alert("Error");
     } else {
         alert("unknown operation");
