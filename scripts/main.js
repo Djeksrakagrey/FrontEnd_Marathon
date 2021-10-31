@@ -66,28 +66,27 @@
 
 //  КАЛЬКУЛЯТОР
 
-let a = prompt("Введите первую переменную(число)");
-let b = prompt("Введите вторую переменную(число)");
-let operator = prompt("Введите математический символ(знак +, -, * или /)");
 
 function calc(a, b, operator) {
-    if (operator == ("+")) {
-        alert(a * 1 + b * 1);
+    let result
+    if (operator == "+") {
+        result = a + b;
     }
-    else if (operator == ("-")) {
-        alert(a - b);
-    } else if (operator == ("*")) {
-        alert(a * b);
-    } else if (operator == ("/")) {
-        alert(a / b);
+    else if (operator == "-") {
+        result = a - b;
+    } else if (operator == "*") {
+        result = a * b;
+    } else if (operator == "/") {
+        result = a / b;
     } else if (a == "" || b == "" || operator == "" || typeof a !== Number || typeof b !== Number) {
-        alert("Error");
+        result = "Error";
     } else {
-        alert("unknown operation");
+        result = "unknown operation";
     }
+    return result;
 }
 
-calc(a, b, operator);
+console.log(calc(1, 4, "+"));
 
 
 
