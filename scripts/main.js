@@ -98,28 +98,28 @@
 
 //  КАЛЬКУЛЯТОР
 
-// let a = prompt("Введите первую переменную(число)");
-// let b = prompt("Введите вторую переменную(число)");
-// let operator = prompt("Введите оператор(знак +, -, * или /)");
+let a = prompt("Введите первую переменную(число)");
+let b = prompt("Введите вторую переменную(число)");
+let operator = prompt("Введите оператор(знак +, -, * или /)");
 
-// function calc(a, b, operant) {
-//     if (operator == ("+")) {
-//         alert(a * 1 + b * 1);
-//     }
-//     else if (operator == ("-")) {
-//         alert(a - b);
-//     } else if (operator == ("*")) {
-//         alert(a * b);
-//     } else if (operator == ("/")) {
-//         alert(a / b);
-//     } else if (a == "" || b == "" || operant == "" || typeof a !== Number || typeof b !== Number) {
-//         alert("Error");
-//     } else {
-//         alert("unknown operation");
-//     }
-// }
+function calc(a, b, operant) {
+    if (operator == ("+")) {
+        alert(a * 1 + b * 1);
+    }
+    else if (operator == ("-")) {
+        alert(a - b);
+    } else if (operator == ("*")) {
+        alert(a * b);
+    } else if (operator == ("/")) {
+        alert(a / b);
+    } else if (a == "" || b == "" || operant == "" || typeof a !== Number || typeof b !== Number) {
+        alert("Error");
+    } else {
+        alert("unknown operation");
+    }
+}
 
-// calc(a, b, operator);
+calc(a, b, operator);
 
 
 
