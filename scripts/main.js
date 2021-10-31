@@ -1,3 +1,46 @@
+//  КАЛЬКУЛЯТОР
+
+
+function calc(a, b, operator) {
+    let result
+    if (operator == "+") {
+        result = a + b;
+    }
+    else if (operator == "-") {
+        result = a - b;
+    } else if (operator == "*") {
+        result = a * b;
+    } else if (operator == "/") {
+        result = a / b;
+    } else if (a == "" || b == "" || operator == "" || typeof a !== Number || typeof b !== Number) {
+        result = "Error";
+    } else {
+        result = "unknown operation";
+    }
+    return result;
+}
+
+console.log(calc(1, 4, "+"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // let user = "John";
 // let admin = user;
 // alert(admin);
@@ -64,29 +107,6 @@
 
 
 
-//  КАЛЬКУЛЯТОР
-
-
-function calc(a, b, operator) {
-    let result
-    if (operator == "+") {
-        result = a + b;
-    }
-    else if (operator == "-") {
-        result = a - b;
-    } else if (operator == "*") {
-        result = a * b;
-    } else if (operator == "/") {
-        result = a / b;
-    } else if (a == "" || b == "" || operator == "" || typeof a !== Number || typeof b !== Number) {
-        result = "Error";
-    } else {
-        result = "unknown operation";
-    }
-    return result;
-}
-
-console.log(calc(1, 4, "+"));
 
 
 
