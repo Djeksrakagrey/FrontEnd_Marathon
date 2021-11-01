@@ -3,16 +3,17 @@
 
 function calc(a, b, operator) {
     let result
-    if (operator == "+") {
+    const isNotValid = a == "" || b == "" || operator == "" || typeof a !== 'Number' || typeof b !== 'Number';
+    if (operator === "+") {
         result = a + b;
     }
-    else if (operator == "-") {
+    else if (operator === "-") {
         result = a - b;
-    } else if (operator == "*") {
+    } else if (operator === "*") {
         result = a * b;
-    } else if (operator == "/") {
+    } else if (operator === "/") {
         result = a / b;
-    } else if (a == "" || b == "" || operator == "" || typeof a !== Number || typeof b !== Number) {
+    } else if (isNotValid) {
         result = "Error";
     } else {
         result = "unknown operation";
@@ -20,7 +21,7 @@ function calc(a, b, operator) {
     return result;
 }
 
-console.log(calc(1, 4, "+"));
+console.log(calc(5, 4, "*"));
 
 
 
