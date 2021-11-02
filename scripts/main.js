@@ -1,29 +1,55 @@
 //  КАЛЬКУЛЯТОР
 
 
+// function calc(a, b, operator) {
+//     let result
+//     const isNotValid = a == "" || b == "" || operator == "" || typeof a !== 'Number' || typeof b !== 'Number';
+//     if (operator === "+") {
+//         result = a + b;
+//     }
+//     else if (operator === "-") {
+//         result = a - b;
+//     } else if (operator === "*") {
+//         result = a * b;
+//     } else if (operator === "/") {
+//         result = a / b;
+//     } else if (isNotValid) {
+//         result = "Error";
+//     } else {
+//         result = "unknown operation";
+//     }
+//     return result;
+// }
+
+// console.log(calc(5, 4, "*"));
+
+
+
 function calc(a, b, operator) {
-    let result
     const isNotValid = a == "" || b == "" || operator == "" || typeof a !== 'Number' || typeof b !== 'Number';
-    if (operator === "+") {
-        result = a + b;
-    }
-    else if (operator === "-") {
-        result = a - b;
-    } else if (operator === "*") {
-        result = a * b;
-    } else if (operator === "/") {
-        result = a / b;
-    } else if (isNotValid) {
+
+    if (isNotValid) {
         result = "Error";
-    } else {
-        result = "unknown operation";
     }
-    return result;
+
+    switch (operator) {
+        case "+":
+            return a + b;
+
+        case "-":
+            return a - b;
+
+        case "*":
+            return a * b;
+
+        case "/":
+            return a / b;
+
+        default: return "unknown operation";
+    }
 }
 
-console.log(calc(5, 4, "*"));
-
-
+console.log(calc(5, 4, "-"));
 
 
 
@@ -117,4 +143,3 @@ console.log(calc(5, 4, "*"));
 //         alert(i);
 //     }
 // }
-
