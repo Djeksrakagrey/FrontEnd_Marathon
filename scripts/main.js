@@ -1,4 +1,107 @@
+// TODO ЛИСТ
+
+const list = {
+    "create a task": "In Progress",
+    "make a bed": "Done",
+    "write a post": "To Do",
+}
+
+function changeStatus(task, status) {
+    list[task] = status;
+}
+
+function addTask(task) {
+    list[task] = "To Do";
+};
+
+function deleteTask(task) {
+    delete list[task];
+};
+
+function showList() {
+
+    console.log("To Do:")
+    for (task in list) {
+        if (list[task] === "To Do") {
+            console.log(` "${task}" `)
+        } else {
+            console.log("-")
+        }
+    }
+
+
+    console.log("In Progress:")
+    for (task in list) {
+        if (list[task] === "In Progress") {
+            console.log(` "${task}" `)
+        } else {
+            console.log("-")
+        }
+    }
+
+    console.log("Done:")
+    for (task in list) {
+        if (list[task] === "Done") {
+            console.log(` "${task}" `)
+        } else {
+            console.log("-")
+        }
+    }
+
+};
+
+addTask("Go to sleep");
+addTask("Play in PS5");
+changeStatus("write a post", "Done");
+changeStatus("Play in PS5", "In Progress");
+deleteTask("Go to sleep")
+showList();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //  КАЛЬКУЛЯТОР
+
+
+// function calc(a, b, operator) {
+//     const isNotValid = typeof a !== 'number' || typeof b !== 'number' || operator === '';
+//     let operators = {
+//         sum: a + b,
+//         sub: a - b,
+//         multi: a * b,
+//         div: a / b,
+//     }
+
+//     if (isNotValid) {
+//         return "Error";
+//     } else if (operator in operators) {
+//         return operators[operator];
+//     } else {
+//         return "unknown operation";
+//     }
+
+// };
+
+// console.log(calc(77, 55, "sub"));
+
+//
+
 
 
 // function calc(a, b, operator) {
@@ -25,32 +128,32 @@
 
 
 
-function calc(a, b, operator) {
-    const isNotValid = a == "" || b == "" || operator == "" || typeof a !== 'Number' || typeof b !== 'Number';
+// function calc(a, b, operator) {
+//     const isNotValid = a == "" || b == "" || operator == "" || typeof a !== 'Number' || typeof b !== 'Number';
 
-    if (isNotValid) {
-        result = "Error";
-    }
+//     if (isNotValid) {
+//         return "Error";
+//     } else {
 
-    switch (operator) {
-        case "+":
-            return a + b;
+//         switch (operator) {
+//             case "+":
+//                 return a + b;
 
-        case "-":
-            return a - b;
+//             case "-":
+//                 return a - b;
 
-        case "*":
-            return a * b;
+//             case "*":
+//                 return a * b;
 
-        case "/":
-            return a / b;
+//             case "/":
+//                 return a / b;
 
-        default: return "unknown operation";
-    }
-}
+//             default: return "unknown operation";
+//         }
+//     }
+// }
 
-console.log(calc(5, 4, "-"));
-
+// console.log(calc(5, 5, "+"));
 
 
 
