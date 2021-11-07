@@ -20,32 +20,43 @@ function deleteTask(task) {
 
 function showList() {
 
+    let count = 0;
+
     console.log("To Do:")
     for (task in list) {
         if (list[task] === "To Do") {
-            console.log(` "${task}" `)
-        } else {
-            console.log("-")
+            console.log(` "${task}" `);
+            count++;
         }
+    }
+
+    if (count === 0) {
+        console.log("-");
     }
 
 
     console.log("In Progress:")
     for (task in list) {
         if (list[task] === "In Progress") {
-            console.log(` "${task}" `)
-        } else {
-            console.log("-")
+            console.log(` "${task}" `);
+            count++;
         }
+    }
+
+    if (count === 0) {
+        console.log("-");
     }
 
     console.log("Done:")
     for (task in list) {
         if (list[task] === "Done") {
-            console.log(` "${task}" `)
-        } else {
-            console.log("-")
+            console.log(` "${task}" `);
+            count++;
         }
+    }
+
+    if (count === 0) {
+        console.log("-");
     }
 
 };
