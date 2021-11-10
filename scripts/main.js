@@ -1,87 +1,111 @@
+
+
+function showVerticalMessage(str) {
+    let newStr;
+    if (str.length > 10) {
+        newStr = str.slice(0, 10);
+    }
+
+    if (str[0] == "м") {
+        newStr = str[0].toUpperCase() + str.slice(1);
+    } else {
+        newStr = str;
+    }
+
+    for (let char of newStr) {
+        console.log(char);
+    }
+
+};
+
+showVerticalMessage("марафонfsffsfssdf");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // TODO ЛИСТ
 
-const list = {
-    "create a task": "In Progress",
-    "make a bed": "Done",
-    "write a post": "To Do",
-}
+// const list = {
+//     "create a task": "In Progress",
+//     "make a bed": "Done",
+//     "write a post": "To Do",
+// }
 
-function changeStatus(task, status) {
-    list[task] = status;
-}
+// function changeStatus(task, status) {
+//     list[task] = status;
+// }
 
-function addTask(task) {
-    list[task] = "To Do";
-};
+// function addTask(task) {
+//     list[task] = "To Do";
+// };
 
-function deleteTask(task) {
-    delete list[task];
-};
+// function deleteTask(task) {
+//     delete list[task];
+// };
 
-function showList() {
+// function showList() {
 
-    let count = 0;
+//     let count = 0;
 
-    console.log("To Do:")
-    for (task in list) {
-        if (list[task] === "To Do") {
-            console.log(` "${task}" `);
-            count++;
-        }
-    }
+//     console.log("To Do:")
+//     for (task in list) {
+//         if (list[task] === "To Do") {
+//             console.log(`"${task}"`);
+//             count++;
+//         }
+//     }
 
-    if (count === 0) {
-        console.log("-");
-    }
-
-
-    console.log("In Progress:")
-    for (task in list) {
-        if (list[task] === "In Progress") {
-            console.log(` "${task}" `);
-            count++;
-        }
-    }
-
-    if (count === 0) {
-        console.log("-");
-    }
-
-    console.log("Done:")
-    for (task in list) {
-        if (list[task] === "Done") {
-            console.log(` "${task}" `);
-            count++;
-        }
-    }
-
-    if (count === 0) {
-        console.log("-");
-    }
-
-};
-
-addTask("Go to sleep");
-addTask("Play in PS5");
-changeStatus("write a post", "Done");
-changeStatus("Play in PS5", "In Progress");
-deleteTask("Go to sleep")
-showList();
+//     if (count === 0) {
+//         console.log("-");
+//     }
 
 
+//     console.log("In Progress:")
+//     for (task in list) {
+//         if (list[task] === "In Progress") {
+//             console.log(`"${task}"`);
+//             count++;
+//         }
+//     }
 
+//     if (count === 0) {
+//         console.log("-");
+//     }
 
+//     console.log("Done:")
+//     for (task in list) {
+//         if (list[task] === "Done") {
+//             console.log(`"${task}"`);
+//             count++;
+//         }
+//     }
 
+//     if (count === 0) {
+//         console.log("-");
+//     }
 
+// };
 
-
-
-
-
-
-
-
-
+// addTask("Go to sleep");
+// addTask("Play in PS5");
+// changeStatus("write a post", "Done");
+// changeStatus("Play in PS5", "In Progress");
+// deleteTask("Go to sleep")
+// showList();
 
 
 
@@ -111,12 +135,12 @@ showList();
 
 // console.log(calc(77, 55, "sub"));
 
-//
+// //
 
 
 
 // function calc(a, b, operator) {
-//     let result
+//     let result;
 //     const isNotValid = a == "" || b == "" || operator == "" || typeof a !== 'Number' || typeof b !== 'Number';
 //     if (operator === "+") {
 //         result = a + b;
