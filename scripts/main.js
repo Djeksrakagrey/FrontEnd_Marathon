@@ -1,15 +1,18 @@
 
 
 function showVerticalMessage(str) {
+    let lengthStr;
     let newStr;
     if (str.length > 10) {
-        newStr = str.slice(0, 10);
+        lengthStr = str.slice(0, 10);
+    } else {
+        lengthStr = str;
     }
 
-    if (str[0] == "м") {
-        newStr = str[0].toUpperCase() + str.slice(1);
+    if (lengthStr[0] == "м") {
+        newStr = lengthStr[0].toUpperCase() + lengthStr.slice(1);
     } else {
-        newStr = str;
+        newStr = lengthStr;
     }
 
     for (let char of newStr) {
@@ -18,7 +21,7 @@ function showVerticalMessage(str) {
 
 };
 
-showVerticalMessage("марафонfsffsfssdf");
+showVerticalMessage("марафон");
 
 
 
