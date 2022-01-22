@@ -1,27 +1,77 @@
 
 
-function showVerticalMessage(str) {
-    let lengthStr;
-    let newStr;
-    if (str.length > 10) {
-        lengthStr = str.slice(0, 10);
-    } else {
-        lengthStr = str;
-    }
 
-    if (lengthStr[0] == "м") {
-        newStr = lengthStr[0].toUpperCase() + lengthStr.slice(1);
-    } else {
-        newStr = lengthStr;
-    }
 
-    for (let char of newStr) {
-        console.log(char);
-    }
 
-};
 
-showVerticalMessage("марафон");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function buildFun(n) {
+
+//     var res = [];
+
+//     for (var i = 0; i < n; i++) {
+//         res.push(function () {
+//             return i;
+//         });
+
+//     }
+//     return res;
+// }
+
+
+// console.log(buildFun(4));
+
+
+
+
+
+
+
+// function showVerticalMessage(str) {
+//     let lengthStr;
+//     let newStr;
+//     if (str.length > 10) {
+//         lengthStr = str.slice(0, 10);
+//     } else {
+//         lengthStr = str;
+//     }
+
+//     if (lengthStr[0] == "м") {
+//         newStr = lengthStr[0].toUpperCase() + lengthStr.slice(1);
+//     } else {
+//         newStr = lengthStr;
+//     }
+
+//     for (let char of newStr) {
+//         console.log(char);
+//     }
+
+// };
+
+// showVerticalMessage("марафон");
 
 
 
@@ -284,3 +334,27 @@ showVerticalMessage("марафон");
 //         alert(i);
 //     }
 // }
+
+
+// function getAverage(marks) {
+//     //TODO : calculate the downward rounded average of the marks array
+
+//     let sumArr = marks.reduce((sum, current) => sum + current, 0);
+//     let num = sumArr / marks.length;
+//     console.log(Math.round(num))
+
+// }
+
+// getAverage([1, 3, 1, 2, 1, 1,])
+
+
+
+
+// let table = document.body.firstElementChild;
+
+// for (let i = 0; i < table.rows.length; i++) {
+//     let row = table.rows[i];
+//     row.cells[i].style.backgroundColor = 'red';
+// }
+
+

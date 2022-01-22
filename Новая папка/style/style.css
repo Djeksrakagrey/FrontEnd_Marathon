@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+
+*:before,
+*:before {
+    box-sizing: inherit;
+}
+
+.calculator {
+    position: relative;
+    margin: 50px auto;
+    width: 364px;
+    height: 582px;
+    background-color: #17171c;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    height: 599px;
+    left: 20px;
+    right: 20px;
+    bottom: 25px;
+}
+
+.numbers {
+position: static;
+width: 324px;
+height: 96px;
+left: 0px;
+top: 63px;
+
+font-family: Work Sans;
+font-style: normal;
+font-weight: 300;
+font-size: 96px;
+line-height: 96px;
+
+display: flex;
+align-items: center;
+text-align: right;
+
+color: #FFFFFF;
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: 16px 0px;
+}
+
+.row {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+position: static;
+width: 324px;
+height: 72px;
+left: 0px;
+top: 527px;
+
+flex: none;
+order: 6;
+align-self: stretch;
+flex-grow: 0;
+margin: 16px 0px;
+}
+
+.buttons {
+    position: static;
+width: 69.67px;
+height: 72px;
+left: 254.33px;
+top: 0px;
+
+/* Dark/Button/High Emphasis */
+
+background: #4B5EFC;
+border-radius: 24px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+margin: 0px 16px;
+}
+

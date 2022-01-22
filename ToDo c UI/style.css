@@ -1,0 +1,10 @@
+body {
+    background-color: white;
+};
+
+.rectangle {
+    position: absolute;
+    width: 476px;
+    height: 688px;
+    background: white;
+};
